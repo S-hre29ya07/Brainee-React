@@ -140,6 +140,12 @@
   .sidebar__button span:last-child {
     margin-left: auto !important;
   }
+  .sidebar__button.selected {
+    background-color: #e0e0e05f !important;
+  }
+  .sidebar__button:hover {
+    background-color: #e0e0e05f !important;
+  }  
   .sidebar__subbutton {
     font-size: 16px;
     padding: 10px !important;
@@ -179,6 +185,8 @@
     margin-top: 20px;
     width: 130px !important;
     height: 90px;
+    background-color: #e0e0e0c1 !important;
+    border-radius: 15px;
   }
   .upgrade-button{
     width: 122px !important;
@@ -232,6 +240,7 @@
   }
   .homepage-heading {
     font-size: 25px;
+    color: #e0e0e07e !important;
   }
   .admin__button{
     display: none !important;
