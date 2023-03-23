@@ -66,6 +66,7 @@
   gap: 20px;
 }
 .navbar__icon--margin {
+  color: yellow;
   margin-left: 5px;
 }
 
@@ -173,8 +174,8 @@
   .card-project {
     background-color:  rgb(87, 83, 83);
     border-radius: 15px;
-    width: 100px !important;
-    height: 90px;
+    width: 105px !important;
+    height: 70px!important;
     position: absolute;
     top: 180px !important;
     left: 30px !important;
@@ -185,7 +186,6 @@
     margin-top: 20px;
     width: 130px !important;
     height: 90px;
-    background-color: #e0e0e0c1 !important;
     border-radius: 15px;
   }
   .upgrade-button{
@@ -245,6 +245,9 @@
   .admin__button{
     display: none !important;
   }
+  .span-name{
+    display: none !important;
+  }
 
   .search-container {
     position: relative;
@@ -256,6 +259,18 @@
   }
   .search-icon {
     font-size: 15px !important;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px){
+  .sidebar {
+    width: 30% !important;
+    height: 750px !important;
+    margin-left: 20px !important;
+  }
+  .homepage {
+    width: 80% !important;
+    height: 750px !important;
   }
 }
 
@@ -398,7 +413,8 @@
 
 /* card styles */
 .card{
-  background-color: #e0e0e0c1;
+  background-color: rgba(224, 224, 224, 0.19);
+  margin-top: 40px;
   border-radius: 15px;
   width: 240px;
   height: 135px;
@@ -468,10 +484,7 @@
 
 /* admin styles */
 .admin__button{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 15%;
+  width: 45px;
   height: 40px;
   padding: 0 10px;
   font-size: 14px;
@@ -490,11 +503,6 @@
   z-index: 2;
 }
 
-span-name{
-  color: #fff;
-}
-
-
 .search-container {
   position: relative;
   display: inline-block;
@@ -503,8 +511,8 @@ span-name{
   width: 300px;
   height: 40px;
   font-size: 16px;
-  border-color: black;
-  background-color: #e0e0e04a;
+  border-color: rgba(224, 224, 224, 0.19);
+  background-color: rgba(224, 224, 224, 0.19);
   border-radius: 10px;
   padding-right: 2.5rem; /* space for the icon */
 }
@@ -534,4 +542,24 @@ body.overlay-active::before {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 2;
+}
+.admin__item {
+  display: flex;
+  align-items: center;
+}
+
+.admin__container {
+  display: flex;
+  align-items: center;
+}
+
+.admin__button {
+  margin-right: 8px;
+}
+
+.span-name {
+  white-space: nowrap;
+  margin-left: 10px;
+  color: rgb(230, 225, 225);
+  font-size: 17px;
 }

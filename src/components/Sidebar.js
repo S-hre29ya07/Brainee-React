@@ -18,9 +18,11 @@ const Sidebar = ({ changePage }) => {
   return (
     <aside className="sidebar">
       <ul className="sidebar__list ">
-      <li className="sidebar__item">
+      <li className="sidebar__item admin__item">
+      <div className="admin__container">
           <button className="admin__button">J</button>
-          {/* <span className="span-name">Jack Sparrow</span> */}
+          <span className="span-name">Jack Sparrow</span>
+      </div>
         </li>
         <li className="sidebar__item">
           <button className="new-project-button" onClick={toggleCard}><span>New Project</span><span><FontAwesomeIcon icon={faAdd}/></span></button>
@@ -55,7 +57,6 @@ const Sidebar = ({ changePage }) => {
             <div className="free-plan">
               <h3 className="upgrade-heading">FREE PLAN</h3>
               <hr />
-              <input type="range" className="upgrade-range"/>
               <button className="upgrade-button">UPGRADE TO PREMIUM <FontAwesomeIcon icon={faCrown} className="navbar__icon--margin"/></button>
             </div>
           </li>
