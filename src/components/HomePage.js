@@ -1,10 +1,17 @@
 import React from "react";
-
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+import {faSearch} from "@fortawesome/free-solid-svg-icons"
+import { faFolder } from "@fortawesome/free-solid-svg-icons";
 const HomePage = ({ currentPage }) => {
   let heading = "";
   switch (currentPage) {
     case "Home":
-      heading = "Welcome to brainee!";
+      heading = (
+        <div className="search-container">
+          <input type="text" placeholder="Search Your Projects" className="search-bar" />
+          <FontAwesomeIcon icon={faSearch} className="search-icon" />
+        </div>
+        );
       break;
     case "Projects":
       heading = "Welcome to projects";
@@ -16,10 +23,15 @@ const HomePage = ({ currentPage }) => {
       heading = "Welcome to Brand kit";
       break;
     case "Trash":
-      heading = "Welcome to trash";
+      heading = "Trash";
       break;
     default:
-      heading = "Welcome to brainee!";
+      heading = (
+        <div className="search-container">
+        <input type="text" placeholder="Search Your Projects" className="search-bar" />
+        <FontAwesomeIcon icon={faSearch} className="search-icon" />
+      </div>
+        );
   }
 
   return (
