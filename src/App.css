@@ -563,3 +563,13 @@ body.overlay-active::before {
   color: rgb(230, 225, 225);
   font-size: 17px;
 }
+
+.folders-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.folder-icon {
+  margin-right: 10px;
+}
