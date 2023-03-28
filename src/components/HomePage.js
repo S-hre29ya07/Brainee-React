@@ -1,7 +1,7 @@
 import React from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {faSearch} from "@fortawesome/free-solid-svg-icons"
-import { faFolder } from "@fortawesome/free-solid-svg-icons";
+
 const HomePage = ({ currentPage }) => {
   let heading = "";
   switch (currentPage) {
