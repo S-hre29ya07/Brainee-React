@@ -261,7 +261,7 @@
     font-size: 15px !important;
   }
 }
-@media only screen and (min-height: 1024px){
+@media only screen and (min-height: 750px){
   .sidebar {
     height: 810px !important;
   }
