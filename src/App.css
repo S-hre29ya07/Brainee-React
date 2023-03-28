@@ -269,10 +269,17 @@
     height: 810px !important;
   }
   .card {
-    margin-top: 90px !important;
+    margin-top: 145px !important;
   }
   .new-project-button {
-    margin-top: 90px !important;
+    margin-top: 85px !important;
+  }
+  .card-project {
+    position: absolute;
+    top: 268px !important;
+    left: 45px !important;
+    padding: 10px;
+    z-index: 2;
   }
 }
 
